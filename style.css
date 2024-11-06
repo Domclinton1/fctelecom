@@ -534,12 +534,16 @@ max-width: 450px;
     justify-content: space-between;
     gap: 1.8rem;
     padding: 40px;
-    
+    background-image: url(./assets/images/Internet\ Para\ Empresas\ Provedor\ De\ Internet\ Moderno\ Roxo\ E\ Branco\ Post\ Para\ Instagram.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
 }
 .contatos {
     display: flex;
     justify-content: space-between;
     gap: 20rem;
+    
 }
 .contatos ul li {
     list-style: none;
