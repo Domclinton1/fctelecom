@@ -33,11 +33,11 @@ body {
     align-items: center;
     text-align: justify;
     gap: 1.8rem;
-    padding: 150px;
+    
     color: #fff;
 }
 .banner-text h1, .banner-text p {
-    width: 70%;
+    width: 100%;
 }
 .banner h1 {
     font-size: 50px;
@@ -147,6 +147,10 @@ header nav .cta {
     cursor: pointer;
 }
 
+
+.logo img {
+    width: 100px;
+}
 @media (max-width: 768px) {
     /* Ocultar menu padrão e exibir ícone do menu */
     header nav .menu {
@@ -168,6 +172,15 @@ header nav .cta {
     /* Ajuste o botão de contato */
     header nav .cta {
         width: auto;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 100px;
     }
 }
 .plano-net h2 {
