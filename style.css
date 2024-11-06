@@ -1,3 +1,7 @@
+:root {
+    --linear-purple: linear-gradient(90deg, #d836e6, #581cea, rgba(88, 28, 174, 0));
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -113,15 +117,24 @@ header nav .menu {
     gap: 1.8rem;
     list-style: none;
     color: #ffffff;
+    z-index: 99;
 }
 
 /* Itens do menu */
-header nav .menu li {
+header nav .menu a {
     cursor: pointer;
     transition: 0.5s;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;    
 }
-header nav .menu li:hover, .cta:hover {
+header nav .menu a:hover {
     color: gold;
+    letter-spacing: 0.5rem
+}
+header nav  .cta:hover {
+    color: gold;
+    letter-spacing: 0.2rem
 }
 
 /* Botão de contato */
@@ -580,7 +593,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(43, 43, 213);
+    background: rgb(43, 43, 213);
     color: #fff;
     padding: 40px;
     gap: 1.8rem;
