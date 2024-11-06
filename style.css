@@ -2,21 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto'
+    font-family: 'Roboto';
+    box-sizing: border-box;
 
 }
 html {
     scroll-behavior: smooth;
 }
 body {
-    
+    max-width: 1440px;
     color: #000;
 }
 .banner {
     background-image: url(./assets/images/banner-2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment:fixed;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -61,6 +62,31 @@ body {
     transition: 0.5s;
     
 }
+
+@media screen and (max-width:450px) {
+.banner {
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.banner-text{
+    margin: 0;
+    padding: 0;
+}
+.banner-text h1 {
+    font-size: 30px;
+    width: 100%;
+}
+.banner-text p {
+    width: 100%;
+}
+.banner .cta{
+    width: 80%;
+}
+}
+/* Estilos para o header e nav */
 header {
     display: flex;
     flex-direction: column;
@@ -78,36 +104,70 @@ header nav {
     background: rgb(43, 43, 213);
     height: 100px;
 }
-header nav ul {
+
+/* Estilos para o menu */
+header nav .menu {
     display: flex;
     gap: 1.8rem;
     list-style: none;
-    width: 100%;
     color: #ffffff;
 }
-header nav ul li {
+
+/* Itens do menu */
+header nav .menu li {
     cursor: pointer;
     transition: 0.5s;
 }
-header nav ul li:hover, .cta:hover {
+header nav .menu li:hover, .cta:hover {
     color: gold;
 }
 
+/* Botão de contato */
 header nav .cta {    
     background-color: #01a884;
-    width: 30%;
     height: 35px;
     color: #ffffff;
     display: flex;
     align-items: center;
-    text-align: center;
     justify-content: center;
     border-radius: 5px;
     cursor: pointer;
     gap: 1rem;
     font-size: 18px;
+    padding: 0 1rem;
 }
 
+/* Ícone do menu para telas menores */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    /* Ocultar menu padrão e exibir ícone do menu */
+    header nav .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: rgb(43, 43, 213);
+    }
+    header nav .menu.active {
+        display: flex;
+    }
+    .menu-icon {
+        display: block;
+    }
+
+    /* Ajuste o botão de contato */
+    header nav .cta {
+        width: auto;
+    }
+}
 
 .internet-planos h2, h3  {
     align-items: center;
@@ -345,6 +405,54 @@ max-width: 450px;
     gap: 1rem;
     font-size: 18px;
 }
+@media screen and (max-width: 450px){
+   .sobre {
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   }
+   .sobreText {
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   }
+   .sobreText p {
+    max-width: 450px;
+    width: 100%;
+    width: 100%;
+    font-size: 18px;
+   }
+   .sobreText ul h3 {
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    font-size: 23px;
+    width: 100%;
+   }
+   .sobreText ul {
+    display: flex;
+    max-width: 450px;
+    width: 100%;
+    font-size: 18px;
+   }
+   .callText {
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 18px;
+   }
+   .callText .cta {
+    width: 100%;
+   }
+    
+}
+@media screen and (min-width: 451px) and (max-width: 768px){
+   
+}
 .feedbacks {
     padding: 40px;
 }
@@ -377,6 +485,13 @@ max-width: 450px;
     align-items: center;
     justify-content: space-between;
 }
+@media screen and (max-width: 450px){
+   
+    
+}
+@media screen and (min-width: 451px) and (max-width: 768px){
+   
+}
 .contato {
     display: flex;
     flex-direction: column;
@@ -398,6 +513,28 @@ max-width: 450px;
 }
 .contatos ul li:hover {
     color: gold;
+}
+@media screen and (max-width: 450px){
+   .contato {
+        display: flex;
+        flex-direction: column;
+        max-width: 450px;
+        width: 100%;
+
+   }
+   .contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.3rem;
+   }
+}
+@media screen and (min-width: 451px) and (max-width: 768px){
+   .contato {
+    min-width: 451px;
+    max-width: 768px;
+    width: 100%;
+   }
 }
 footer {
     display: flex;
@@ -430,3 +567,30 @@ footer span {
     color: gold;
 }
 
+@media screen and (max-width: 450px){
+    footer {
+        max-width: 450px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+    }
+    footer ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media screen and (min-width: 451px) and (max-width: 768px){
+    footer {
+        max-width: 768px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+    }
+    footer ul {
+        display: flex;
+        flex-direction: column;
+    }
+}

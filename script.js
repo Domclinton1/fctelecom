@@ -1,3 +1,7 @@
+function toggleMenu() {
+    document.querySelector('.menu').classList.toggle('active');
+}
+
 function fiber(){
     var click = document.getElementById('#fiber')
     window.location.href = '#fiber'
