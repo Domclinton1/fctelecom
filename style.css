@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 
 }
@@ -69,6 +69,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    height: 70vh;
 
 }
 .banner-text{
@@ -76,8 +77,9 @@ body {
     padding: 0;
 }
 .banner-text h1 {
-    font-size: 30px;
+    font-size: 35px;
     width: 100%;
+    color: gold;
 }
 .banner-text p {
     width: 100%;
@@ -168,13 +170,32 @@ header nav .cta {
         width: auto;
     }
 }
-
-.internet-planos h2, h3  {
-    align-items: center;
+.plano-net h2 {
     text-align: center;
-    line-height: 2;
+}
+.net-title h1, h2, h3  {
+    align-items: center;
+    text-align: justify;
+    line-height: 1.2;
+
 }
 
+.net-title h1 {
+    color: gold;
+    font-size: 30px;
+    margin-top: 50px;
+    padding: 10px;
+}
+.net-title h2 {
+    color: purple;
+    font-size: 27px;
+    padding: 10px;
+}
+.net-title h3 {
+    padding: 10px;
+    color: #01a884;
+    font-size: 23px;
+}
 .planos-content {
     display: flex;
     justify-content: center;
@@ -205,6 +226,7 @@ header nav .cta {
     background: rgb(247, 244, 244);
     color: #000;
     box-shadow: 2px 2px 12px #000;
+    overflow: auto;
 }
 
 .plano-net h2 {
@@ -241,7 +263,7 @@ width: 100%;
 max-width: 450px;
 }
 .internet-planos h2, h3 {
-    padding: 40px 0 10px 10px;
+    margin: 30px auto;
 }
 
 .planos-content {
