@@ -2,6 +2,7 @@
     --linear-purple: linear-gradient(90deg, #d836e6, #581cea, rgba(88, 28, 174, 0));
     --vermelho: #da291c;
     --preto: #1f1d1d;
+    --purple-haze:  #581cea;
 }
 
 *{
@@ -17,8 +18,7 @@ html {
 }
 body {
     max-width: 1440px;
-    color: #fff;
-    background-color: var(--preto);
+    color: var(--preto);
 }
 .banner {
     background-image: url(./assets/images/banner-2.png);
@@ -104,7 +104,6 @@ header {
 header nav {
     display: flex;
     width: 100%;
-    max-width: 1200px;
     justify-content: space-between;
     padding: 10px;
     align-items: center;
@@ -226,7 +225,8 @@ header nav .cta {
     font-size: 23px;
 }
 .planos-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -237,7 +237,7 @@ header nav .cta {
     height: 86vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+        
     gap: 1.8rem;
 }
 .plano-net:first-child p {
@@ -247,10 +247,13 @@ header nav .cta {
     font-size: 20px;
     font-weight: 700;
     margin: 10px 40px;
+    
 }
 .plano-net-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+    justify-content: space-between;
 }
 .plano-net {
     display: flex;
@@ -258,12 +261,16 @@ header nav .cta {
     justify-content: space-between;
     height: 100%;
     text-align: center;
-    border: var(--border);
+    border: var(--vermelho);
     padding: 2rem;
     cursor: pointer;
+    transition: 0.5s;
 }
 .plano-net:hover {
-    background-color: #581cea;
+    background-color: var(--vermelho);
+}
+.plano-net:hover>* {
+    
 }
 
 .plano-net h2 {

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../teste/style.css">
+</head>
+<body>
+    <header class="header">
+        <section>
+            <a href="#" class="logo">
+                <img src="./assets/icons/logo.png" alt="logo">
+            </a>
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="./pages/product.html">Produtos</a>
+                <a href="#review">Avaliações</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <div class="icons">
+                <img onclick="wpp()" width="30" height="30" src="./assets/icons/whatsapp.svg" alt="whatsapp"/>
+                <img onclick="insta()" width="30" height="30" src="./assets/icons/instagram.svg" alt="instagram"/>
+            </div>
+            <div class="menu-btn" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+    
+    </header>
+    <div class="home-container">
+        <section id="home">
+            <div class="content">
+                <h1>Planos de Internet Claro com Velocidade, Estabilidade e Preço Justo!</h1>
+                <h2>Escolha o plano ideal para sua casa ou empresa e conecte-se com quem importa.</h2>
+                <a onclick="wpp()" class="btn">Solicitar Cotação <img width="25" height="25" src="./assets/icons/whatsapp.svg" alt="search--v1"/> </a>
+            </div>
+        </section>
+    </div>
+    <main class="main-content">
+        <section class="menu" id="menu">
+            <h2>Conheça Nossos Planos</h2>
+            <div class="box-container">
+                <div class="box">
+                    <h3>350 Mega</h3>
+                    <div class="price">
+                        99,90
+                    </div>
+                    <a onclick="wpp()" class="btn">Assinar</a>
+                </div>
+                <div class="box">
+                    <h3>500 Mega</h3>
+                    <div class="price">
+                        199,90
+                    </div>
+                    <a onclick="wpp()" class="btn">Assinar</a>
+                </div>
+                <div class="box">
+                    <h3>Claro Multi</h3>
+                    <div class="price">
+                        149,90
+                    </div>
+                    <a onclick="wpp()" class="btn">Assinar</a>
+                </div>
+                <div class="box">
+                    <h3>Box Claro tv+</h3>
+                    <div class="price">
+                        119,90
+                    </div>
+                    <a onclick="wpp()" class="btn">Assinar</a>
+                </div>
+                <div class="box">
+                    <h3>Monte seu plano</h3>
+                    <div class="price">
+                        149,90
+                    </div>
+                    <a onclick="wpp()" class="btn">Selecionar</a>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
