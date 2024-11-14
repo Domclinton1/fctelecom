@@ -1,5 +1,7 @@
 :root {
     --linear-purple: linear-gradient(90deg, #d836e6, #581cea, rgba(88, 28, 174, 0));
+    --vermelho: #da291c;
+    --preto: #1f1d1d;
 }
 
 *{
@@ -15,7 +17,8 @@ html {
 }
 body {
     max-width: 1440px;
-    color: #000;
+    color: #fff;
+    background-color: var(--preto);
 }
 .banner {
     background-image: url(./assets/images/banner-2.png);
@@ -97,7 +100,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: rgb(43, 43, 213);
 }
 header nav {
     display: flex;
@@ -107,7 +109,7 @@ header nav {
     padding: 10px;
     align-items: center;
     text-align: center;
-    background: rgb(43, 43, 213);
+    background-color: var(--vermelho);
     height: 100px;
 }
 
@@ -173,10 +175,11 @@ header nav .cta {
         position: absolute;
         top: 100px;
         left: 0;
-        background-color: rgb(43, 43, 213);
+        background-color: var(--vermelho);
     }
     header nav .menu.active {
         display: flex;
+        text-align: right;
     }
     .menu-icon {
         display: block;
@@ -245,14 +248,22 @@ header nav .cta {
     font-weight: 700;
     margin: 10px 40px;
 }
+.plano-net-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 .plano-net {
-    box-shadow: #fff 1px 1px 10px;
-    border-radius: 5px;
-    width: 100%;
-    background: rgb(247, 244, 244);
-    color: #000;
-    box-shadow: 2px 2px 12px #000;
-    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+    cursor: pointer;
+}
+.plano-net:hover {
+    background-color: #581cea;
 }
 
 .plano-net h2 {
@@ -598,7 +609,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: rgb(43, 43, 213);
+    background: var(--vermelho);
     color: #fff;
     padding: 40px;
     gap: 1.8rem;
