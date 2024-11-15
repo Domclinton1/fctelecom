@@ -300,12 +300,27 @@ header section {
     border: 1px solid var(--vermelho);
     padding: 2rem;
     cursor: pointer;
+    gap:1.8rem;
 }
+.menu .box-container .box h3 {
+    text-align: justify;
+    font-size: 50px;
+}
+.menu .box-container .box h4 {
+    text-align: justify;
+    font-size: 25px;
+}
+.menu .box-container .box p {
+    text-align: justify;
+    font-size: 20px;
+}
+
 .menu .box-container .box:hover {
     background-color:var(--preto);
+    
 }
 .menu .box-container .box:hover>* {
-    color: var(--preto);
+    color: var(--branco);
 }
 .menu .box-container .box a:hover {
     background-color: var(--vermelho);
@@ -336,6 +351,19 @@ header section {
     font-size: 1.8rem;
     text-align: justify;
 }
+.menu .box-container .box .brands .count {
+    
+    border: 1px solid var(--branco);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    
+
+}
 @media screen and (max-width: 450px) {
     body{
         max-width: 450px;
@@ -355,10 +383,25 @@ header section {
         padding: 5px;
         
     }
-    .brands {
-        
+    
+    .brands img {
+        width: 60px; 
     }
-
+    .brands .brands-imgs {
+        display: flex;
+        gap: 0.5rem;
+    }
+    .brands-imgs .count {
+        background-color: var(--vermelho);
+        color: #fff;
+        border: white;
+    }
+    .menu .box-container .box .price p {
+        font-size: 1.4rem;
+        font-weight: 6
+        500;
+        text-align: justify;
+    }
 }
 
 
