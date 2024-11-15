@@ -302,13 +302,13 @@ header section {
     cursor: pointer;
 }
 .menu .box-container .box:hover {
-    background-color:var(--vermelho);
+    background-color:var(--preto);
 }
 .menu .box-container .box:hover>* {
     color: var(--preto);
 }
 .menu .box-container .box a:hover {
-    background-color: var(--preto);
+    background-color: var(--vermelho);
     color: #ffffff;
 }
 .menu .box-container .box .price {
@@ -317,6 +317,48 @@ header section {
     padding: 0.5rem 0;
     flex-grow: 1;
 }
+.menu .box-container .box .price {
+    color: #000;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    flex-grow: 1;
+}
 
+.menu .box-container .box .price:hover {
+    color: #fff;
+}
+.menu .box-container .box .price  span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+.menu .box-container .box .price p {
+    font-size: 1.8rem;
+    text-align: justify;
+}
+@media screen and (max-width: 450px) {
+    body{
+        max-width: 450px;
+        width: 100%;
+    }
+    .main-content {
+        max-width: 450px;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .menu .box-container {
+        max-width: 450px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        
+    }
+    .brands {
+        
+    }
+
+}
 
 
