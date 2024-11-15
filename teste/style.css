@@ -213,12 +213,11 @@ header section {
 
 
 @media screen and (max-width: 450px ) {
+    
     .home-container {
         max-width: 450px;
         width: 100%;
-    }
-    .home-container {
-        background: url("");
+        background: url("../assets/images/Internet\ Para\ Empresas\ Provedor\ De\ Internet\ Moderno\ Roxo\ E\ Branco\ Post\ Para\ Instagram.png");
         height: 100vh;
         background-position: center;
         background-size: cover;
@@ -228,6 +227,7 @@ header section {
         align-items: center;
         min-height: 100vh;
     }
+  
     .content {
         max-width: 60rem;
     
@@ -327,17 +327,12 @@ header section {
     color: #ffffff;
 }
 .menu .box-container .box .price {
-    color: var(--preto);
-    font-size: 2rem;
-    padding: 0.5rem 0;
-    flex-grow: 1;
-}
-.menu .box-container .box .price {
     color: #000;
     font-size: 2rem;
     padding: 0.5rem 0;
     flex-grow: 1;
 }
+
 
 .menu .box-container .box .price:hover {
     color: #fff;
@@ -355,14 +350,23 @@ header section {
     
     border: 1px solid var(--branco);
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 75px;
+    height: 75px;
     align-items: center;
     text-align: center;
     justify-content: center;
     display: flex;
     
 
+}
+.brands .brands-imgs {
+    display: flex;
+    gap: 0.5rem;
+}
+.brands-imgs .count {
+    background-color: var(--vermelho);
+    color: #fff;
+    border: white;
 }
 @media screen and (max-width: 450px) {
     body{
@@ -396,6 +400,17 @@ header section {
         color: #fff;
         border: white;
     }
+    .menu .box-container .box .brands .count {
+        width: 60px;
+        height: 60px;
+
+    }
+    .menu .box-container .box h3 {
+        font-size: 40px;
+    }
+    .menu .box-container .box h3:nth-child(5) {
+        font-size: 20px;
+    }
     .menu .box-container .box .price p {
         font-size: 1.4rem;
         font-weight: 6
@@ -404,4 +419,21 @@ header section {
     }
 }
 
-
+footer {
+    background-color: var(--vermelho);
+    padding: 40px;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+    color: var(--branco);
+}
+.footer-end {
+    padding: 20px 0;
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
