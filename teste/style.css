@@ -422,6 +422,7 @@ header section {
 footer {
     background-color: var(--vermelho);
     padding: 40px;
+    width: 100%;
 }
 footer ul {
     list-style: none;
@@ -436,4 +437,94 @@ footer ul {
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
+}
+
+.local {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    width: 100%;
+    align-items: center;
+    color: var(--branco);
+}
+.local h2 {
+    font-size: 2.6rem
+}
+.local p {
+    font-size: 22px;
+}
+.local iframe {
+    width: 100%;
+}
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    cursor: pointer;
+}
+.btn-whatsapp img {
+    max-width: 74px;
+    transition: 0.4s;
+    animation: zoomImage 2s infinite;
+}
+.btn-whatsapp img:hover{
+    transform: scale(1.1);
+}
+.tooltip-text{
+    visibility: hidden;
+    position: absolute;
+    width: 220px;
+    top: 8px;
+    left: -244px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s;
+    color: #f7c73b;
+    background-color: var(--bg);
+    font-size: 20px;
+    background-color: var(--vermelho);
+            color: var(--preto);
+}
+.btn-whatsapp:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+}
+@media screen and (max-width: 450px) {
+    .btn-whatsapp{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 99;
+        cursor: pointer;
+    }
+    .btn-whatsapp img {
+            max-width: 54px;
+            transition: 0.4s;
+            animation: zoomImage 2s infinite;
+    }
+    .btn-whatsapp img:hover {
+            transform: scale(1.1);
+    }
+    .tooltip-text{
+            visibility: hidden;
+            position: absolute;
+            width: 220px;
+            top: 8px;
+            left: -244px;
+            padding: 6px;
+            border-radius: 8px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.4s;
+            background-color: var(--vermelho);
+            color: var(--preto);
+    }
+    .btn-whatsapp:hover .tooltip-text{
+        visibility: visible;
+        opacity: 1;
+    }
 }
