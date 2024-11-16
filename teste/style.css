@@ -123,6 +123,7 @@ header section {
     }
     .navbar.active {
         display: flex;
+        background-color: var(--vermelho);
     }
 
     .menu-btn {
@@ -574,4 +575,14 @@ footer ul {
     display: none;
     font-size: 14px;
     line-height: 1.5;
+  }
+ 
+  .contato {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .contato h2 {
+    color: var(--branco);
+    font-size: 30px;
   }
