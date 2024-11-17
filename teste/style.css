@@ -577,12 +577,219 @@ footer ul {
     line-height: 1.5;
   }
  
-  .contato {
-    align-items: center;
-    justify-content: center;
+ /* Estilo da seção de contato */
+#contact {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contact h2 {
+    font-size: 28px;
+    color: #004aad;
+    margin-bottom: 20px;
+  }
+  
+  #contact p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .contact-icons {
     display: flex;
+    justify-content: center;
+    gap: 30px;
   }
-  .contato h2 {
+  
+  .contact-icon {
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-icon:hover img {
+    transform: scale(1.2);
+  }
+  
+  .contact-icon:hover {
+    transform: translateY(-5px);
+    color: #004aad;
+  }
+  
+  .contact-icon span {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+
+
+  /* Estilo da seção de benefícios */
+#benefits {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #benefits h2 {
+    font-size: 28px;
     color: var(--branco);
-    font-size: 30px;
+    margin-bottom: 30px;
   }
+  
+  .benefits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .benefit-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .benefit-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .benefit-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .benefit-item h3 {
+    font-size: 18px;
+    color: #004aad;
+    margin-bottom: 10px;
+  }
+  
+  .benefit-item p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+
+
+
+  /* Estilo da seção de depoimentos */
+#testimonials {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #testimonials h2 {
+    font-size: 28px;
+    color: var(--branco);
+    margin-bottom: 30px;
+  }
+  
+  .testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .testimonial-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonial-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .testimonial-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-item h3 {
+    font-size: 18px;
+    color: #004aad;
+    margin-bottom: 5px;
+  }
+  
+  .testimonial-item p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .testimonial-item p strong {
+    color: #333;
+  }
+
+  
+
+
+
+  /* Estilo da seção de call to action */
+#call-to-action {
+    background: linear-gradient(90deg, #004aad, #0078ff);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #call-to-action .cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #call-to-action h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  #call-to-action p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .cta-button {
+    background: #ffcc00;
+    color: #004aad;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #e6b800;
+  }
+  
