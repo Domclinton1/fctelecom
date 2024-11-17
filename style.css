@@ -578,9 +578,18 @@ footer ul {
   }
  
  /* Estilo da seção de contato */
+ .contato {
+    background-image: url("./assets/images/Internet\ Para\ Empresas\ Provedor\ De\ Internet\ Moderno\ Roxo\ E\ Branco\ Post\ Para\ Instagram.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
 #contact {
-    max-width: 800px;
-    
+    max-width: 650px;
+   
     text-align: center;
     padding: 20px;
     background: #f9f9f9;
