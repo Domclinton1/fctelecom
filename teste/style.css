@@ -580,7 +580,7 @@ footer ul {
  /* Estilo da seção de contato */
 #contact {
     max-width: 800px;
-    margin: 50px auto;
+    
     text-align: center;
     padding: 20px;
     background: #f9f9f9;
@@ -641,7 +641,6 @@ footer ul {
   /* Estilo da seção de benefícios */
 #benefits {
     max-width: 1200px;
-    margin: 50px auto;
     padding: 20px;
     text-align: center;
   }
