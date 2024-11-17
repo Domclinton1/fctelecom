@@ -1,72 +1,79 @@
+// script.js
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const answer = button.nextElementSibling;
+  
+      // Toggle the answer's visibility
+      if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+      } else {
+        answer.style.display = 'block';
+      }
+    });
+  });
+
+  let lastScrollY = window.scrollY;
+
 function toggleMenu() {
-    document.querySelector('.menu').classList.toggle('active');
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('active');
 }
 
-function fiber(){
-    var click = document.getElementById('#fiber')
-    window.location.href = '#fiber'
-}
+// Fecha o menu se clicar fora dele
+document.addEventListener('click', (event) => {
+    const navbar = document.querySelector('.navbar');
+    const menuBtn = document.querySelector('.menu-btn');
 
-function plano1() {
-    var click = document.querySelectorAll('.cta')
-    window.open("https://wa.me/5531997715545?text=Ola,%20quero%20contratar%20o%20plano%20de%20internet%20de 420 MEGA...")
-}
-function plano2() {
-    var click = document.querySelectorAll('.cta')
-    window.open("https://wa.me/5531997715545?text=Ola,%20quero%20contratar%20o%20plano%20de%20internet%20de 750 MEGA...")
-}
-function plano3() {
-    var click = document.querySelectorAll('.cta')
-    window.open("https://wa.me/5531997715545?text=Ola,%20quero%20contratar%20o%20plano%20de%20internet%20de 780 MEGA...")
-}
-function plano4() {
-    var click = document.querySelectorAll('.cta')
-    window.open("https://wa.me/5531997715545?text=Ola,%20quero%20contratar%20o%20plano%20de%20internet%20de 850 MEGA...")
-}
-function plano5() {
-    var click = document.querySelectorAll('.cta')
-    window.open("https://wa.me/5531997715545?text=Ola,%20quero%20contratar%20o%20plano%20de%20internet%20de 1 GIGA...")
-}
-
-
-document.addEventListener("DOMContentLoaded", function(){
-    const openModalButtons = document.querySelectorAll(".openModal");
-    const modals = document.querySelectorAll(".modal");
-    const closeButtons = document.querySelectorAll(".close");
-
-    openModalButtons.forEach(function(button){
-        button.addEventListener("click", function(){
-            const modalId = button.getAttribute("data-modal-id");
-            const modal = document.getElementById(modalId);
-            modal.style.display = "block";
-        });
-    });
-
-    closeButtons.forEach(function(button) {
-        button.addEventListener("click", function(){
-            const modal = button.closest(".modal");
-            modal.style.display = "none";
-        });
-    });
-
-    window.addEventListener("click", function(event) {
-        modals.forEach(function(modal) {
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
-        });
-    });
+    // Verifica se o clique foi fora do menu e do botão de menu
+    if (!navbar.contains(event.target) && !menuBtn.contains(event.target)) {
+        navbar.classList.remove('active');
+    }
 });
 
-function email(){
-    var click = document.querySelectorAll('email')
-    window.location.href = 'mailto:fctelecom24@gmail.com';
-}
-function wpp() {
-    var click = document.querySelectorAll('.cta')
-    window.open("https://wa.me/5531997715545?text=Ola,%20gostaria%20de%20contratar%20um%20plano de internet...")
-}
-function wpp2() {
-    var click = document.querySelectorAll('.cta')
-    window.open("https://wa.me/5531992616974?text=Ola,%20gostaria%20de%20informações%20sobre%20os planos de internet...")
-}
+window.addEventListener("scroll", () => {
+    const header = document.querySelector(".header");
+    const navbar = document.querySelector('.navbar');
+
+    if (window.scrollY > lastScrollY) {
+        // Rolando para baixo - esconde o menu e fecha a lista
+        header.classList.add("hide");
+        navbar.classList.remove('active');
+    } else {
+        // Rolando para cima - mostra o menu
+        header.classList.remove("hide");
+    }
+    lastScrollY = window.scrollY;
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  const faqAnswers = document.querySelectorAll('.faq-answer');
+
+  // Função para fechar todas as respostas
+  function closeAllAnswers() {
+    faqAnswers.forEach(answer => {
+      answer.style.display = 'none';
+    });
+  }
+
+  // Abrir/fechar a pergunta clicada
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', (e) => {
+      // Impede o clique de fechar imediatamente a resposta
+      e.stopPropagation();
+
+      // Fecha todas as outras respostas
+      closeAllAnswers();
+
+      // Alterna a exibição da resposta correspondente
+      const answer = question.nextElementSibling;
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+
+  // Fecha todas as respostas ao clicar fora do FAQ
+  document.addEventListener('click', () => {
+    closeAllAnswers();
+  });
+});

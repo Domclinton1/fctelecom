@@ -3,15 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <!-- Meta Description -->
     <meta name="description" content="Descubra os planos de internet de alta velocidade da Nome da Empresa para BH e toda Minas Gerais. Preços a partir de R$107/mês. Navegue sem limites e com estabilidade. Confira!">
 
@@ -19,360 +10,333 @@
     <meta name="keywords" content="Planos de internet em Minas Gerais, Internet rápida em MG, Internet em BH, Planos de internet em BH, Conexão rápida e estável MG">
 
 
-
-    <title>Internet de Alta Velocidade em MG - Planos a partir de R$107 | FC Telecom</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>FC Telecom: Internet + Conexão + Velocidade</title>
+    <link rel="stylesheet" href="../teste/style.css">
+    <link rel="icon" href="./assets/icons/logo.png">
 </head>
 <body>
-    <header>
-        
-        <nav>
-            <a href="#home" class="logo">
-                <img src="./assets/icons/FC-removebg-preview.png" alt="logo">
+    <header class="header">
+        <section>
+            <a href="#" class="logo">
+                <img src="./assets/icons/logo.png" alt="logo">
             </a>
-            <ul class="menu">
-                <a href="#home">Inicio</a>
-                <a href="#planos">Planos de Internet</a>
+            <nav class="navbar">
+                <a href="#">Home</a>
                 <a href="#sobre">Sobre</a>
-                <a href="#local">Localização</a>
+                <a href="./pages/product.html">Produtos</a>
+                <a href="#review">Avaliações</a>
                 <a href="#contato">Contato</a>
-            </ul>
-            <div class="cta" onclick="plano1(), gtag_report_conversion()">
-                Entre em Contato <i class="fa-brands fa-whatsapp"></i>
+            </nav>
+            <div class="icons">
+                <img onclick="wpp()" width="30" height="30" src="./assets/icons/whatsapp.svg" alt="whatsapp"/>
+                <img onclick="insta()" width="30" height="30" src="./assets/icons/instagram.svg" alt="instagram"/>
             </div>
-            <div class="menu-icon" onclick="toggleMenu()">
-                <i class="fa fa-bars"></i>
+            <div class="menu-btn" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+        </section>
     
-        </nav>
-        <div class="banner" id="home">
-           <div class="banner-text">
-            <h1>Internet Rápida e Confiável para Sua Casa e Trabalho!</h1>
-            <div class="logo">
-                <img src="./assets/icons/FC-removebg-preview.png" alt="logo">
-            </div>
-            <p>Assista, jogue, trabalhe sem interrupções. Conecte-se ao melhor da tecnologia!</p>
-           </div>
-           
-            <div class="cta">
-                Experimente Nossa Conexão <i class="fa-brands fa-whatsapp"></i>
-            </div>
-        </div>
     </header>
+    <div class="home-container">
+        <section id="home">
+            <div class="content">
+                <h1>Planos de Internet Claro com Velocidade, Estabilidade e Preço Justo!</h1>
+                <h2>Escolha o plano ideal para sua casa ou empresa e conecte-se com quem importa.</h2>
+                <a onclick="wpp()" class="btn">Solicitar Cotação <img width="25" height="25" src="./assets/icons/whatsapp.svg" alt="search--v1"/> </a>
+            </div>
+        </section>
+    </div>
+    <main class="main-content">
+        <section id="benefits">
+            <h2>Por que escolher a FC Telecom?</h2>
+            <div class="benefits-container">
+              <div class="benefit-item">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/maintenance.png" alt="isntalação rápida"/>
+                <h3>Instalação Rápida</h3>
+                <p>Garanta sua conexão Claro instalada em até 48 horas após a contratação.</p>
+              </div>
+              <div class="benefit-item">
+                <img width="60" height="60" src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/60/external-support-support-vitaliy-gorbachev-fill-vitaly-gorbachev.png" alt="external-support-support-vitaliy-gorbachev-fill-vitaly-gorbachev" alt="Icone de Suporte 24 horas"/>
+                <h3>Suporte Técnico 24/7</h3>
+                <p>Estamos sempre disponíveis para resolver qualquer problema de conexão.</p>
+              </div>
+              <div class="benefit-item">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/wifi--v1.png" alt="Conexão Estavel"/>
+                <h3>Conexão Estável</h3>
+                <p>Navegue sem interrupções com a qualidade garantida pela Claro.</p>
+              </div>
+              <div class="benefit-item">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/profit-report.png" alt="planos economicos"/>
+                <h3>Planos Econômicos</h3>
+                <p>Escolha o plano perfeito para você, com preços acessíveis e sem surpresas.</p>
+              </div>
+            </div>
+          </section>
+          
+        <section class="menu" id="menu">
+            <h2>Escolha o Plano Ideal para Você</h2>
+            <div class="box-container">
+                <div class="box">
+                    <div class="box-title">
+                    <h3>350 Mega</h3>
+                    <h4>Globoplay</h4>
+                    </div>
+                    <div class="box-info">
+                        <p>Internet para sua casa com WI-FI grátis</p>
+                    </div>
+                    <div class="brands">
+                        <p>Apps Inclusos:</p>
+                        <img src="./assets/brands/globoplay.svg" alt="globoplay">
+                        <img src="./assets/brands/mcafee.svg" alt="mcafee">
+                        <img src="./assets/brands/claro-video.svg" alt="claro-video">
+                        <img src="./assets/brands/skeelo.svg" alt="skeelo audiobook">
+                    </div>
+                    <div class="price">
+                        <p>Por apenas <strong>R$ 99,90</strong> /mês</p>
+                    </div>
+                    <a onclick="wpp()" class="btn">Assinar</a>
+                </div>
+                <div class="box">
+                    <div class="box-title">
+                        <h3>500 Mega</h3>
+                        <h4>Globoplay</h4>
+                        </div>
+                        <div class="box-info">
+                            <p>Internet para sua casa com WI-FI grátis</p>
+                        </div>
+                        <div class="brands">
+                            <p>Apps Inclusos:</p>
+                            <div class="brands-imgs">
+                                <img src="./assets/brands/globoplay.svg" alt="globoplay">
+                            <img src="./assets/brands/mcafee.svg" alt="mcafee">
+                            <img src="./assets/brands/claro-video.svg" alt="claro-video">
+                            <div class="count"><p>+2</p></div>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <p>Por apenas <strong>R$ 119,90</strong> /mês</p>
+                        </div>
+                    <a onclick="wpp()" class="btn">Assinar</a>
+                </div>
+                <div class="box">
+                    <div class="box-title">
+                        <h3>Claro Multi</h3>
+                        <h4 style="font-size: 20px;">Internet fixa e celular juntos</h4>
+                        </div>
+                        <div class="box-info">
+                            <p>500 Mega Globoplay <br> + PÓS 50GB</p>
+                            <P>+10GB de Bônus Black Friday</P>
+                        </div>
+                        <div class="brands">
+                            <p>Apps Inclusos:</p>
+                            <div class="brands-imgs">
+                                <img src="./assets/brands/globoplay.svg" alt="globoplay">
+                            <img src="./assets/brands/mcafee.svg" alt="mcafee">
+                            <img src="./assets/brands/claro-video.svg" alt="claro-video">
+                            <div class="count"><p>+2</p></div>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <p>Por apenas <strong>R$ 149,90</strong> /mês</p>
+                        </div>
+                    <a onclick="wpp()" class="btn">Assinar</a>
+                </div>
+                <div class="box">
+                       <div class="box-title">
+                        <h3>Box Claro tv+</h3>
+                        <h4 style="font-size: 20px;">AppleTv+, Max, Netflix e Globoplay + canais</h4>
+                       </div>
+                        
+                        <div class="box-info">
+                            <p>Mais mobilidade e o melhor dos streamings</p>
+                        </div>
+                        <div class="brands">
+                            <p>Apps Inclusos:</p>
+                            <div class="brands-imgs">
+                                <img src="./assets/brands/apple-tvplus-branco.svg" alt="apple">
+                            <img src="./assets/brands/max.svg" alt="max">
+                            <img src="./assets/brands/netflix.svg" alt="netflix">
+                            <div class="count"><p>+5</p></div>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <p>Por apenas<strong>R$119,90</strong>/mês</p>
+                        </div>
+                    <a onclick="wpp()" class="btn">Assinar</a>
+                </div>
+                <div class="box">
+                    <div class="box-title">
+                        <h3>Monte seu plano</h3>
+                        <h4>com produtos Claro</h4>
+                    </div>
+                    <div class="brands">
+                        <img src="./assets/brands/claro-internet.svg" alt="Plano de internet">
+                        <img src="./assets/brands/claro-tvmais.svg" alt="Planos tv">
+                        <img src="./assets/brands/minha-claro-movel.svg" alt="Plano Móvel">
+                        <img src="./assets/brands/claro-fixo.svg" alt="Plano fixo">
+                    </div>
+                    <div class="box-info">
+                        <p>Confira as combinações mais vendidas e escolha o plano <strong>Claro Multi</strong> ideal para você</p>
+                    </div>
+                    <div class="price">
+                        <p>A partir de <strong>R$149,90</strong>/mês</p>
+                    </div>
+                    <a onclick="wpp()" class="btn">Selecionar</a>
+                </div>
+                
+            </div>
+        </section>
+        <section id="testimonials">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="testimonials-container">
+              <div class="testimonial-item">
+                <img src="gamer.jpg" alt="Foto de cliente gamer">
+                <h3>Lucas Almeida</h3>
+                <p><strong>Gamer, Belo Horizonte</strong></p>
+                <p>"Com a internet da FC Telecom, nunca mais sofri com ping alto ou quedas durante as partidas. A conexão é incrível e super estável!"</p>
+              </div>
+              <div class="testimonial-item">
+                <img src="empresa.jpg" alt="Foto de cliente empresa">
+                <h3>Mariana Souza</h3>
+                <p><strong>Empresária, Contagem</strong></p>
+                <p>"Nossa empresa depende de uma conexão de alta qualidade para videoconferências e envio de arquivos. A FC Telecom superou todas as expectativas."</p>
+              </div>
+              <div class="testimonial-item">
+                <img src="criador-de-conteudo.jpg" alt="Foto de cliente criador de conteúdo">
+                <h3>Renata Oliveira</h3>
+                <p><strong>Criadora de Conteúdo, Nova Lima</strong></p>
+                <p>"A velocidade da Claro pela FC Telecom é perfeita para transmitir ao vivo e subir vídeos em alta qualidade. Recomendo para todos os criadores!"</p>
+              </div>
+            </div>
+          </section>
+        
+          <section id="call-to-action">
+            <div class="cta-content">
+              <h2>Garanta sua conexão com velocidade hoje mesmo!</h2>
+              <p>Garanta a melhor internet da Claro em Belo Horizonte e região. Conexão estável, velocidades incríveis e suporte de qualidade para você ou sua empresa.</p>
+              <a href="#contact" class="cta-button">Contrate Agora</a>
+            </div>
+          </section>
+          
 
-    <section class="internet-planos" id="#planos">
-        <div class="net-title">
-            <h1>A Melhor Rede de Internet Fibra Ótica de Minas Gerais!</h2>
-                <h2>Tenha Mais Velocidade e Mais Conectividade com a Melhor Internet Fibra Ótica de Minas Gerais:</h2>
-                <h3>Conecte-se ao melhor plano de internet e navegue sem limites:</h3>
-        </div>
-        <div class="planos-content" id="fiber">
-            
-            <div class="plano-net">
-                <h2>420 MEGA</h2>
-              
-                <div class="plano-net-grid">
-                    <span><img src="./assets/images/wifi 6.png" alt="wi-fi 6"></span>
-                <span>
-                    <p>
-                    </p>
-                   
-                </span>
-                
-                <span><img src="./assets/images/skeelo.png" alt=""></span>
-                <span>
-                    <p>
-                    </p>
-                   
-                </span>
-                <span><img src="./assets/images/mcAfee.png" alt=""></span>
-                <span>
-                    <p>
-                    </p>
-                   
-                </span>
-                </div>
-                
-                <p>Por apenas R$ 107,00/Mês</p>
-                <div class="cta" onclick="plano1(), gtag_report_conversion()">
-                    Contratar Plano <i class="fa-brands fa-whatsapp"></i>
+        <section class="local">
+            <h2>Nosso endereço:</h2>
+            <p>Estamos na rua Andrade Silva, n° 40, Mantiqueira - Belo Horizonte, Minas Gerais</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.2197295976343!2d-43.9945044!3d-19.8306536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa691c57a83cbb7%3A0x2de89dd33bd1c548!2sR.%20Andrade%20e%20Silva%2C%2040%20-%20Copacabana%2C%20Belo%20Horizonte%20-%20MG%2C%2031540-480!5e0!3m2!1spt-BR!2sbr!4v1731700605352!5m2!1spt-BR!2sbr" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="faq">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+              <button class="faq-question">Quanto tempo leva para a instalação do plano de internet Claro?</button>
+              <div class="faq-answer">
+                A instalação é rápida! Após a contratação, um técnico será agendado para realizar a instalação em até 48 horas, dependendo da sua localização.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">Existe algum custo adicional para a instalação?</button>
+              <div class="faq-answer">
+                A taxa de instalação pode variar de acordo com o plano contratado e sua região. Consulte nossos consultores para mais informações.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">Os planos têm fidelidade?</button>
+              <div class="faq-answer">
+                Sim, os planos da Claro têm contratos de fidelidade de 12 meses. Caso deseje cancelar antes, pode haver cobrança de multa proporcional.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">O que acontece se minha conexão apresentar problemas?</button>
+              <div class="faq-answer">
+                A Claro oferece suporte técnico 24/7 para resolver qualquer problema com a sua conexão, seja remotamente ou com o envio de um técnico até sua residência.
+              </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Posso mudar de plano depois de contratar?</button>
+                <div class="faq-answer">
+                    Sim! Você pode mudar para um plano superior a qualquer momento. Basta entrar em contato com nossa central de atendimento.
                 </div>
             </div>
-            <div class="plano-net">
-                <h2>750 MEGA</h2>
-                <div class="plano-net-grid">
-                    <span><img src="./assets/images/yt-premium.png" alt=""></span>
-                <span><img src="./assets/images/wifi 6.png" alt="wi-fi6"></span>
-                <span><img src="./assets/images/skeelo.png" alt="skeelo"></span>
-                <span><img src="./assets/images/watch.png" alt=""></span>
-                <span><img src="./assets/images/mcAfee.png" alt=""></span>
-                </div>
-                <p>Por apenas R$ 110,00/MêS</p>
-                <div class="cta" onclick="plano2(), gtag_report_conversion()">
-                    Contratar Plano <i class="fa-brands fa-whatsapp"></i>
+            <div class="faq-item">
+                <button class="faq-question">Quais são as formas de pagamento?</button>
+                <div class="faq-answer">
+                    Você pode pagar por boleto bancário, débito automático ou cartão de crédito, dependendo da sua preferência.
                 </div>
             </div>
-            <div class="plano-net">
-                <h2>780 MEGA</h2>
-                <div class="plano-net-grid">
-                    <span><img src="./assets/images/paramount.png" alt=""></span>
-                <span><img src="./assets/images/wifi 6.png" alt="wi-fi6"></span>
-                <span><img src="./assets/images/skeelo.png" alt="skeelo"></span>
-                <span><img src="./assets/images/watch.png" alt=""></span>
-                <span><img src="./assets/images/mcAfee.png" alt=""></span>
-                </div>
-                <p>A partir de R$ 119,00/MêS</p>
-                <div class="cta openModal" data-modal-id="modal1">
-                    Veja Mais
+            <div class="faq-item">
+                <button class="faq-question">Quais são os requisitos para contratar um plano?</button>
+                <div class="faq-answer">
+                    Basta fornecer seus dados pessoais (CPF, RG), endereço e uma forma de contato. Nossos consultores entrarão em contato para finalizar a contratação.
                 </div>
             </div>
-            <div class="modal" id="modal1">
-                <div class="modalContent">
-                    <span class="close">&times;</span>
-                    <h2>Conheça Nossos Planos de Internet Fibra ótica de 780 MEGA e Veja o que o Plano Acompanha:</h2>
-                   
-                    <div class="modalText">
-                        <div class="megaplano">
-                            <h2>780 MEGA +</h2>
-                            <span><img src="./assets/images/paramount.png" alt="plano de internet + paramount"></span>
-                            <span><img src="./assets/images/wifi 6.png" alt=""></span>
-                            <span><img src="./assets/images/skeelo.png" alt=""></span>
-                            <span><img src="./assets/images/watch.png" alt=""></span>
-                            <span><img src="./assets/images/mcAfee.png" alt=""></span>
-                            <p>Por apenas <strong>R$ 119,00</strong>/mÊs</p>
-                            <div class="cta" onclick="plano3(), gtag_report_conversion()">
-                                Contratar Plano <i class="fa-brands fa-whatsapp"></i>
-                            </div>
-                        </div>
-                        <div class="megaplano">
-                            <h2>780 MEGA +</h2>
-                            <span><img src="./assets/images/yt-premium.png" alt=""></span>
-                            <span><img src="./assets/images/wifi 6.png" alt=""></span>
-                            <span><img src="./assets/images/skeelo.png" alt=""></span>
-                            <span><img src="./assets/images/McAfee.png" alt=""></span>
-                            <p>Por apenas <strong>R$ 125,00</strong>/mÊs</p>
-                            <div class="cta" onclick="plano3(), gtag_report_conversion()">
-                                Contratar Plano <i class="fa-brands fa-whatsapp"></i>
-                            </div>
-                        </div>
-                        <div class="megaplano">
-                            <h2>780 MEGA +</h2>
-                            <span><img src="./assets/images/globoplay.png" alt=""></span>
-                            <span><img src="./assets/images/wifi 6.png" alt=""></span>
-                            <span><img src="./assets/images/skeelo.png" alt=""></span>
-                            <span><img src="./assets/images/McAfee.png" alt=""></span>
-                            <p>Por apenas <strong>R$ 125,00</strong>/mÊs</p>
-                            <div class="cta" onclick="plano3(), gtag_report_conversion()">
-                                Contratar Plano <i class="fa-brands fa-whatsapp"></i>
-                            </div>
-                        </div>
-                        <div class="megaplano">
-                            <h2>780 MEGA +</h2>
-                            <span><img src="./assets/images/max.png" alt=""></span>
-                            <span><img src="./assets/images/wifi 6.png" alt=""></span>
-                            <span><img src="./assets/images/skeelo.png" alt=""></span>
-                            <span><img src="./assets/images/watch.png" alt=""></span>
-                            <span><img src="./assets/images/McAfee.png" alt=""></span>
-                            <p>Por apenas <strong>R$ 125,00</strong>/mÊs</p>
-                            <div class="cta" onclick="plano3(), gtag_report_conversion()">
-                                Contratar Plano <i class="fa-brands fa-whatsapp"></i>
-                            </div>
-                        </div>
-                        <div class="megaplano">
-                            <h2>780 MEGA +</h2>
-                            <span><img src="./assets/images/telecine.png" alt=""></span>
-                            <span><img src="./assets/images/wifi 6.png" alt=""></span>
-                            <span><img src="./assets/images/skeelo.png" alt=""></span>
-                            <span><img src="./assets/images/McAfee.png" alt=""></span>
-                            <p>Por apenas <strong>R$ 125,00</strong>/mês</p>
-                            <div class="cta" onclick="plano3(), gtag_report_conversion()">
-                                Contratar Plano <i class="fa-brands fa-whatsapp"></i>
-                            </div>
-                        </div>
-                        <div class="megaplano">
-                            <h2>780 MEGA +</h2>
-                            <span><img src="./assets/images/premiere.png" alt=""></span>
-                            <span><img src="./assets/images/wifi 6.png" alt=""></span>
-                            <span><img src="./assets/images/skeelo.png" alt=""></span>
-                            <span><img src="./assets/images/McAfee.png" alt=""></span>
-                            <p>Por apenas <strong>R$ 140,00</strong>/mês</p>
-                            <div class="cta" onclick="plano3(), gtag_report_conversion()">
-                                Contratar Plano <i class="fa-brands fa-whatsapp"></i>
-                            </div>
-                        </div>
-                    </div>
+            <div class="faq-item">
+                <button class="faq-question">A Claro atende na minha região?</button>
+                <div class="faq-answer">
+                    Atendemos diversas cidades e regiões! Informe seu CEP no formulário ou entre em contato pelo WhatsApp para confirmar a disponibilidade na sua área.
                 </div>
             </div>
-            
-            <div class="plano-net">
-                <h2>850 MEGA</h2>
-                <div class="plano-net-grid">
-                    <span><img src="./assets/images/youtube+max.png" alt=""></span>
-                <span><img src="./assets/images/wifi 6.png" alt="wi-fi6"></span>
-                <span><img src="./assets/images/skeelo.png" alt="skeelo"></span>
-                <span><img src="./assets/images/watch.png" alt=""></span>
-                <span><img src="./assets/images/mcAfee.png" alt=""></span>
-                </div>
-                <p>A partir de R$ 160,00/MêS</p>
-                <div class="cta openModal" data-modal-id="modal2" >
-                    Veja Mais 
+            <div class="faq-item">
+                <button class="faq-question">Posso contratar planos para empresas?</button>
+                <div class="faq-answer">
+                    Sim! Temos opções de planos empresariais com velocidades maiores e suporte técnico diferenciado.
                 </div>
             </div>
-            <div class="modal" id="modal2">
-                <div class="modalContent">
-                    <span class="close">&times;</span>
-                    <h2>Conheça Nossos Planos de Internet Fibra ótica de 850 MEGA e Veja o que o Plano Acompanha:</h2>
-                    <div class="modalText">
-                        <div class="megaplano">
-                            <h2>850 MEGA +</h2>
-                            <div class="plano-net-grid">
-                                <span><img src="./assets/images/youtube+max.png" alt=""></span>
-                            <span><img src="./assets/images/wifi 6.png" alt=""></span>
-                            <span><img src="./assets/images/skeelo.png" alt=""></span>
-                            <span><img src="./assets/images/watch.png" alt=""></span>
-                            <span><img src="./assets/images/mcAfee.png" alt=""></span>
-                            </div>
-                            <p>Por apenas <strong>R$ 160,00</strong>/mÊs</p>
-                            <div class="cta" onclick="plano4(), gtag_report_conversion()">
-                                Contratar Plano <i class="fa-brands fa-whatsapp"></i>
-                            </div>
-                        </div>
-                        <div class="megaplano">
-                            <h2>850 MEGA +</h2>
-                            <span><img src="./assets/images/yt+globo_max.png" alt=""></span>
-                            <span><img src="./assets/images/wifi 6.png" alt=""></span>
-                            <span><img src="./assets/images/skeelo.png" alt=""></span>
-                            <span><img src="./assets/images/McAfee.png" alt=""></span>
-                            <p>Por apenas <strong>R$ 162,00</strong>/mÊs</p>
-                            <div class="cta" onclick="plano4(), gtag_report_conversion()">
-                                Contratar Plano <i class="fa-brands fa-whatsapp"></i>
-                            </div>
-                        </div>
-                    </div>
+            <div class="faq-item">
+                <button class="faq-question">Existe limite de consumo de dados nos planos?</button>
+                <div class="faq-answer">
+                    Não, todos os planos da Claro são sem franquia de dados, ou seja, você pode navegar ilimitadamente sem preocupações!
                 </div>
             </div>
-            <div class="plano-net">
-                <h2>1 GIGA</h2>
-                <div class="plano-net-grid">
-                    <span><img src="./assets/images/yt+globo_max.png" alt=""></span>
-                <span><img src="./assets/images/wifi 6.png" alt="wi-fi6"></span>
-                <span><img src="./assets/images/skeelo.png" alt="skeelo"></span>
-                <span><img src="./assets/images/watch.png" alt=""></span>
-                <span><img src="./assets/images/mcAfee.png" alt=""></span>
-                </div>
-                <p>Por apenas R$ 199,00/MêS</p>
-                <div class="cta" onclick="plano(), gtag_report_conversion()">
-                    Contratar Plano <i class="fa-brands fa-whatsapp"></i>
-                </div>
+           
+
+          </section>
+          
+          
+          <section id="contact">
+            <h2>Entre em Contato</h2>
+            <p>Estamos prontos para ajudar você a ter a melhor conexão! Entre em contato com a FC Telecom pelos canais abaixo:</p>
+            <div class="contact-icons">
+              <a href="https://wa.me/5531994038782" target="_blank" class="contact-icon">
+                <img src="./assets/icons/whatsapp.svg" alt="WhatsApp">
+                <span>WhatsApp</span>
+              </a>
+              <a href="https://facebook.com/tftelecom" target="_blank" class="contact-icon">
+                <img src="./assets/icons/facebook-brands-solid.svg" alt="Facebook">
+                <span>Facebook</span>
+              </a>
+              <a href="https://instagram.com/tftelecom" target="_blank" class="contact-icon">
+                <img src="./assets/icons/instagram.svg" alt="Instagram">
+                <span>Instagram</span>
+              </a>
+              <a href="https://instagram.com/tftelecom" target="_blank" class="contact-icon">
+                <img src="./assets/icons/envelope-fill.svg" alt="Email">
+                <span>Email</span>
+              </a>
             </div>
-        </div>
-    </section>
-    <section class="sobre" id="sobre">
-        <h2>Sobre</h2>
-        <div class="sobreText">
-            <p>
-                Na FC Telecom, estamos comprometidos em oferecer a você a melhor experiência de conexão à internet. Nossa missão é proporcionar uma <span style="color: orange; font-weight: bold;">internet ultrarrápida, estável e confiável</span> para que você possa viver, trabalhar e se divertir sem interrupções. Utilizamos tecnologia de fibra óptica de última geração e uma infraestrutura robusta, garantindo alta velocidade e cobertura nas principais regiões.
-                <br>
-                Desde 2019 no mercado, conquistamos a confiança de milhares de clientes, e é com esse mesmo compromisso que buscamos fazer parte do seu dia a dia. Estamos aqui para oferecer não só internet de qualidade, mas também um <span style="color: orange; font-weight: bold;">suporte dedicado</span> que realmente resolve. Nossa equipe está disponível 24 horas para te atender, garantindo que você tenha a melhor experiência com a nossa internet.
-                            
-            </p>
-            <ul>
-                <h3 style="color: rgb(43, 43, 213);">Por Que Escolher a FC Telecom?</h3>
-                <li><strong style="color: rgb(43, 43, 213);">Internet de Alta Velocidade:</strong> navegue, jogue e assista a conteúdos em streaming com estabilidade e velocidade.</li>
-                <li><strong style="color: rgb(43, 43, 213);">Tecnologia de Ponta:</strong> conexão segura e moderna com fibra óptica.</li>
-                <li><strong style="color: rgb(43, 43, 213);">Suporte 24/7:</strong> nosso time está pronto para atender você a qualquer hora, garantindo um atendimento rápido e eficiente.</li>
-                <li><strong style="color: rgb(43, 43, 213);">Soluções para Todos os Perfis:</strong> desde planos residenciais a pacotes corporativos, temos o ideal para você.</li>
-            </ul>
-        </div>
-        <div class="callText">
-            <p><strong>Experimente a qualidade e a tranquilidade de estar conectado com quem entende de internet.</strong></p>
-            <p>Clique no botão abaixo e venha para a <strong>FC Telecom</strong></p>
-            <div class="cta">
-                <span>Assine Agora e Conecte-se ao Futuro</span>
-            </div>
-        </div>
-    </section>
-    <section class="feedbacks" id="feedbacks">
-        <h2>O Que os Nossos Clientes Falam Sobre Nós?</h2>
-        <div class="feedbacks-container">
-            <div class="feedback">
-                <img src="" alt="">
-               <div class="name-rate">
-                <strong style="font-size: 20px;">Clinton Ribeiro</strong> <span class="stars">
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/f7c73b/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/f7c73b/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/f7c73b/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/f7c73b/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/f7c73b/star--v1.png" alt="star--v1"/>
-                    
-                </span>
-               </div>
-                <p>Gostei muito do plano de 850 MEGA pois com ele eu posso jogar sem parar</p>
-            </div>
-            <div class="feedback">
-                <img src="" alt="">
-               <div class="name-rate">
-                <strong style="font-size: 20px;">Clinton Ribeiro</strong> <span class="stars">
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/f7c73b/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/f7c73b/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/f7c73b/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/f7c73b/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/f7c73b/star--v1.png" alt="star--v1"/>
-                    
-                </span>
-               </div>
-                <p>Gostei muito do plano de 850 MEGA pois com ele eu posso jogar sem parar</p>
-            </div>
-            <div class="feedback">
-                <img src="" alt="">
-               <div class="name-rate">
-                <strong style="font-size: 20px;">Clinton Ribeiro</strong> <span class="stars">
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/f7c73b/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/f7c73b/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/f7c73b/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/f7c73b/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/f7c73b/star--v1.png" alt="star--v1"/>
-                    
-                </span>
-               </div>
-                <p>Gostei muito do plano de 850 MEGA pois com ele eu posso jogar sem parar</p>
-            </div>
-        </div>
-    </section>
-    <section class="local" id="local">
-        <h2>Onde Estamos:</h2>
-        <h3>Atendemos em Belo Horizonte e Minas Gerais</h3>
-        <p>Nosso endereço comercial se localiza na <a href="">Rua Geraldo Ferreira Teles, N° 405, Mantiqueira - Belo Horizonte, Minas Gerais.</a></p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3754.0661467797127!2d-43.9862335!3d-19.794792599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa68e4dd342b407%3A0x373db7d287b011e4!2sR.%20Geraldo%20Telles%2C%20405%20-%20Mantiqueira%2C%20Belo%20Horizonte%20-%20MG%2C%2031660-290!5e0!3m2!1spt-BR!2sbr!4v1730236926735!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-    <section class="contato" id="contato">
-        <h2>Entre em Contato Conosco</h2>
-        <div class="contatos">
-            <ul>
-                <h3>Contato direto</h3>
-                <li onclick="wpp1()">WhatsApp</li>
-                <li onclick="wpp2()">WhatsApp</li>
-                <li onclick="email()">Email</li>
-            </ul>
-            <ul>
-                <h3>Redes Sociais</h3>
-                <li>Facebook</li>
-                <li>Instagram</li>
-            </ul>
-        </div>
-    </section>
+          </section>
+          
+
+    </main>
     <footer>
         <ul>
-            <li onclick="email()"><i class="fa fa-envelope"></i> fctelecom24@gmail.com</li>
+            
             <li onclick="wpp1()"><i class="fa-brands fa-whatsapp"></i> (31) 99771-5545</li>
             <li onclick="wpp2()"><i class="fa-brands fa-whatsapp"></i> (31) 99261-6974</li>
+            <li onclick="email()"><i class="fa fa-envelope"></i> fctelecom24@gmail.com</li>
             <li><i class="fa-brands fa-instagram"></i> @fctelecom_ltda</li>
-            <li><i class="fa fa-map"></i> Rua Geraldo Ferreira Teles, N° 405, Mantiqueira - Belo Horizonte, Minas Gerais.</li>
+            <li><i class="fa fa-map"></i> Rua Andrade Silva, n° 40, Mantiqueira - Belo Horizonte, Minas Gerais.</li>
         </ul>
-        <p><span>FC Telecom</span> - © Todos os direitos reservados.</p>
+        <div class="footer-end">
+            <p><span>FC Telecom</span> - © Todos os direitos reservados.</p>
         <p>CNPJ: 56.925.336/0001-10</p>
         <em>Desenvolvido por <span><a href="https://domlinksolucoesdigitais.com.br" target="_blank">Dom Link Soluções Digitais</a></span></em>
+        </div>
     </footer>
-    <script src="./script.js"></script>
+    <a onclick="wpp()" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+        <img  src="./assets/icons/wpp-float.svg" alt="Botão whatsapp">
+        <span class="tooltip-text">Fazer Contato</span>
+    </a>
+    <script src="script.js"></script>
 </body>
 </html>
